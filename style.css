@@ -17,7 +17,7 @@ body {
   color: #fff;
   line-height: 1.2;
   user-select: none;
-  margin-right: 40px; /* espacio a la derecha */
+  margin-right: 40px;
   white-space: nowrap;
 }
 
@@ -26,14 +26,14 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: #000; /* fondo negro sólido */
+  background: #000;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 40px;
   z-index: 9999;
   font-weight: bold;
-  border-bottom: 1px solid #fff; /* borde blanco fino abajo */
+  border-bottom: 1px solid #fff;
   color: #fff;
 }
 
@@ -53,16 +53,18 @@ body {
 
 h1 {
   color: #fff;
-  margin-top: 80px; /* espacio para que no quede debajo de la hotbar */
+  margin-top: 80px;
 }
 
 .camiseta {
+  width: 100%;
+  max-width: 300px;
   margin: 30px auto;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  max-width: 400px;
+  text-align: center;
 }
 
 .camiseta img {
