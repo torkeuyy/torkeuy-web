@@ -26,21 +26,19 @@
 
 <div class="miembro-equipo"> <!-- Alan -->
   <h2>ALAN</h2>
-<h3><a href="https://www.instagram.com/77.daasilva" target="_blank">@77.daasilva</a></h3>
+  <h3><a href="https://www.instagram.com/77.daasilva" target="_blank">@77.daasilva</a></h3>
   <p>Diseñador de logos</p>
 </div>
 
 <div class="miembro-equipo"> <!-- Lautaro -->
   <h2>LAUTARO</h2>
-<h3><a href="https://www.instagram.com/79lautaaro" target="_blank">@79.lautaaro</a></h3>
-
+  <h3><a href="https://www.instagram.com/79lautaaro" target="_blank">@79.lautaaro</a></h3>
   <p>Redes Sociales</p>
 </div>
 
 <div class="miembro-equipo">  <!-- Enzo -->
   <h2>ENZO</h2>
-<h3><a href="https://www.instagram.com/enzito_gariazzo5" target="_blank">@enzito_gariazzo5</a></h3>
-
+  <h3><a href="https://www.instagram.com/enzito_gariazzo5" target="_blank">@enzito_gariazzo5</a></h3>
   <p>Coordinador del grupo</p>
 </div>
 
@@ -83,6 +81,41 @@
   .miembro-equipo p {
     color: white;
     margin: 5px 0 0 0;
+  }
+
+  /* RESPONSIVE - se adapta a celular */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    .miembro-equipo h2 {
+      font-size: 20px;
+    }
+
+    .miembro-equipo h3 {
+      font-size: 16px;
+    }
+
+    .miembro-equipo p {
+      font-size: 14px;
+    }
+
+    #hotbar {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #hotbar a {
+      font-size: 16px;
+    }
+
+    #abreviaciones {
+      font-size: 15px;
+      margin-right: 0;
+    }
   }
 </style>
 
