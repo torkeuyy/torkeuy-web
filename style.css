@@ -77,30 +77,38 @@ h1 {
   color: #fff;
 }
 
-/* Estilos responsive */
-@media (max-width: 600px) {
-  #hotbar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    text-align: center;
-  }
+/* ESTILO PARA EQUIPO */
 
-  #abreviaciones {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
+.miembro-equipo {
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-  h1 {
-    font-size: 22px;
-  }
+.miembro-equipo img {
+  width: 100%;
+  border-radius: 12px;
+}
 
-  .camiseta {
-    width: 90%;
-  }
+.miembro-equipo h2 {
+  margin-top: 10px;
+  color: #fff;
+}
 
-  #hotbar a {
-    font-size: 16px;
-    padding: 6px;
-  }
+.miembro-equipo h3 a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.miembro-equipo h3 a:hover {
+  text-decoration: underline;
+}
+
+.miembro-equipo p {
+  color: #fff;
+  margin: 5px 0 0 0;
 }
