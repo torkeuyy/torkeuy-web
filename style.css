@@ -76,3 +76,31 @@ h1 {
   margin-top: 10px;
   color: #fff;
 }
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+  #hotbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #abreviaciones {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .camiseta {
+    width: 90%;
+  }
+
+  #hotbar a {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
