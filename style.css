@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -10,17 +11,7 @@ body {
   color: #fff;
 }
 
-#abreviaciones {
-  font-family: 'GLIKER', sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  color: #fff;
-  line-height: 1.2;
-  user-select: none;
-  margin-right: 40px;
-  white-space: nowrap;
-}
-
+/* Hotbar fija arriba */
 #hotbar {
   position: fixed;
   top: 0;
@@ -35,6 +26,18 @@ body {
   font-weight: bold;
   border-bottom: 1px solid #fff;
   color: #fff;
+  justify-content: center;
+}
+
+#abreviaciones {
+  font-family: 'GLIKER', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.2;
+  user-select: none;
+  margin-right: 40px;
+  white-space: nowrap;
 }
 
 #hotbar a {
@@ -51,15 +54,17 @@ body {
   color: #000;
 }
 
+/* Titulos */
 h1 {
   color: #fff;
-  margin-top: 80px;
+  margin-top: 80px; /* Para que no quede tapado por la hotbar */
 }
 
+/* Estilo para las camisetas */
 .camiseta {
   width: 100%;
   max-width: 300px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -70,6 +75,7 @@ h1 {
 .camiseta img {
   width: 100%;
   border-radius: 12px;
+  height: auto;
 }
 
 .camiseta h2 {
@@ -77,38 +83,36 @@ h1 {
   color: #fff;
 }
 
-/* ESTILO PARA EQUIPO */
-
-.miembro-equipo {
-  width: 90%;
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+/* Links abajo */
+#canva, #instagram {
+  margin-top: 40px;
 }
 
-.miembro-equipo img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.miembro-equipo h2 {
-  margin-top: 10px;
-  color: #fff;
-}
-
-.miembro-equipo h3 a {
-  color: #66ccff;
+#canva a, #instagram a {
+  font-size: 18px;
+  color: #0066cc;
   text-decoration: none;
 }
 
-.miembro-equipo h3 a:hover {
+#canva a:hover, #instagram a:hover {
   text-decoration: underline;
 }
 
-.miembro-equipo p {
-  color: #fff;
-  margin: 5px 0 0 0;
+/* Responsive: que las camisetas se ordenen en fila si hay pantalla ancha */
+@media(min-width: 700px) {
+  body {
+    padding: 40px;
+  }
+  #hotbar {
+    justify-content: flex-start;
+  }
+  .camisetas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .camiseta {
+    margin: 0;
+  }
 }
